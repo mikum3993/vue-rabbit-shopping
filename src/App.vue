@@ -1,12 +1,8 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
-  <el-button type="primary">Primary</el-button>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <!-- 1级路由组件 -->
+  <RouterView />
 </template>
 
 <style scoped></style>
