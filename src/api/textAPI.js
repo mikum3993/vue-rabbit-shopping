@@ -1,7 +1,7 @@
-import httpInstance from "@/util/http";
+import httpInstance from '@/util/http'
 
-export function getCategory(){
+export function getCategory() {
   return httpInstance({
-    url:'home/category/head'
+    url: 'home/category/head',
   })
 }

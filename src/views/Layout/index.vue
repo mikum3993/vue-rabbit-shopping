@@ -1,5 +1,23 @@
+<script setup>
+import LayoutNav from './components/LayoutNav.vue'
+import LayoutHeader from './components/LayoutHeader.vue'
+import LayoutFooter from './components/LayoutFooter.vue'
+import LayoutFixed from './components/LayoutFixed.vue'
+
+// 获取导航列表的action
+import { useCategoryStore } from '@/stores/Layout/category'
+import { onMounted } from 'vue'
+const categoryStore = useCategoryStore()
+
+onMounted(() => {
+  categoryStore.getCategory()
+})
+</script>
+
 <template>
-  <div>首页</div>
-  <!-- 二级路由组件 -->
+  <LayoutNav />
+  <LayoutHeader />
   <RouterView />
+  <LayoutFooter />
+  <LayoutFixed />
 </template>

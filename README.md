@@ -200,3 +200,10 @@ httpInstance.interceptors.response.use(
 export default httpInstance
 
 ```
+
+### VueUse
+安装
+```
+npm i @vueuse/core
+```
+
