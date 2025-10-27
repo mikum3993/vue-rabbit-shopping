@@ -165,4 +165,10 @@ export default defineConfig({
 })
 ```
 
+### 安装 axios 配置
+1. 安装 
+```
+npm i axios
+```
 
+2. 配置基础实例(统一接口配置)
