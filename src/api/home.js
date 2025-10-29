@@ -1,9 +1,13 @@
 import httpInstance from '@/util/http'
 
 //获取banner
-export function getBannerAPI(){
+export function getBannerAPI(param ={}){
+  const {distributionSite = '1'} = param
   return httpInstance({
-    url:'/home/banner'
+    url:'/home/banner',
+    params: {
+      distributionSite
+    }
   })
 }
 
