@@ -114,5 +114,10 @@ const categoryStore = useCategoryStore()
       border-bottom: 1px solid $xtxColor;
     }
   }
+
+  .router-link-exact-active {
+    color: $xtxColor;
+    border-bottom: 1px solid $xtxColor;
+  }
 }
 </style>
